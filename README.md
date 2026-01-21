@@ -6,12 +6,15 @@
 A simple API for interacting with binary and plain text
 [plist](https://en.wikipedia.org/wiki/Property_list) data.
 
+Note: This is a fork of [the original](https://github.com/wollardj/simple-plist) but with fixes for typescript [issues reported in 2021](https://github.com/wollardj/simple-plist/issues/58)
+
 ## Installation
 
 ### Package managers
 
 ```sh
-npm install simple-plist
+npm install @webnativellc/simple-plist
+
 ```
 
 ### Deno

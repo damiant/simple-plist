@@ -2,16 +2,16 @@
   "name": "@webnativellc/simple-plist",
   "author": "Joe Wollard",
   "license": "MIT",
-  "homepage": "https://github.com/wollardj/simple-plist.git",
+  "homepage": "https://github.com/damiant/simple-plist",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wollardj/simple-plist.git"
+    "url": "https://github.com/damiant/simple-plist"
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "A wrapper utility for interacting with plist data.",
   "main": "dist/index",
   "files": [
