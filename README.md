@@ -11,11 +11,7 @@ A simple API for interacting with binary and plain text
 ### Package managers
 
 ```sh
-# via npm
 npm install simple-plist
-
-# via yarn
-yarn add simple-plist
 ```
 
 ### Deno
