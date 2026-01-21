@@ -11,7 +11,7 @@
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "A wrapper utility for interacting with plist data.",
   "main": "dist/index",
   "files": [
@@ -26,11 +26,12 @@
   ],
   "scripts": {
     "build:tsc": "tsc --project ./tsconfig-build.json",
-    "build": "run-s clean:build build:tsc",
+    "build:fix-declarations": "node scripts/fix-declarations.js",
+    "build": "run-s clean:build build:tsc build:fix-declarations",
     "clean:build": "rimraf dist",
     "clean": "rimraf __tests__/write-test* coverage",
     "prepare": "husky install",
-    "pretest": "clean",
+    "pretest": "npm run clean",
     "test": "jest --coverage --verbose"
   },
   "dependencies": {
