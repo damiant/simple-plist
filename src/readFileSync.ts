@@ -1,5 +1,5 @@
 import fs, { PathOrFileDescriptor } from "fs";
-import { parse } from "./parse";
+import { parse } from "./parse.js";
 
 export function readFileSync<T = unknown>(aFile: PathOrFileDescriptor): T {
   const contents = fs.readFileSync(aFile);

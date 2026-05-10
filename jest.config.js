@@ -1,6 +1,1 @@
-/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
-module.exports = {
-  preset: "ts-jest",
-  testEnvironment: "node",
-  modulePathIgnorePatterns: ["src", "__tests__/utils"],
-};
+// Jest has been removed. See vitest.config.ts for the test configuration.

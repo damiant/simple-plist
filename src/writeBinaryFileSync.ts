@@ -1,6 +1,6 @@
 import bplistCreator from "bplist-creator";
 import fs, { PathOrFileDescriptor, WriteFileOptions } from "fs";
-import type { PlistJsObj } from "./types";
+import type { PlistJsObj } from "./types.js";
 
 export function writeBinaryFileSync(
   aFile: PathOrFileDescriptor,

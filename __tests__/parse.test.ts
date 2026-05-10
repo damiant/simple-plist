@@ -1,5 +1,8 @@
-import * as plist from "../src";
-import { DemoFile } from "./utils/types";
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+import * as plist from "../src/index.js";
+import type { DemoFile } from "./utils/types.js";
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 describe("String parsing", () => {
   it("can parse a string", () => {
@@ -8,10 +11,10 @@ describe("String parsing", () => {
     const parsedDoc = plist.parse(plistString);
 
     return expect(parsedDoc).toMatchInlineSnapshot(`
-              Object {
+              {
                 "Birth Year": 1942,
                 "Name": "John Doe",
-                "Travel Log": Array [
+                "Travel Log": [
                   "Tokyo, Honshu, Japan",
                   "Philadelphia, PA",
                   "Recife, Pernambuco, Brazil",

@@ -1,6 +1,6 @@
 import fs, { PathOrFileDescriptor, WriteFileOptions } from "fs";
 import plist from "plist";
-import type { callbackFn, PlistJsObj } from "./types";
+import type { callbackFn, PlistJsObj } from "./types.js";
 
 export function writeFile(
   aFile: PathOrFileDescriptor,
