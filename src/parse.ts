@@ -1,7 +1,7 @@
 import bplistParser from "bplist-parser";
 import { PathOrFileDescriptor } from "fs";
 import type { PlistValue } from "plist";
-import plist from "plist";
+import * as plist from "plist";
 import type { StringOrBuffer } from "./types.js";
 
 /**

@@ -11,7 +11,7 @@
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
-  "version": "2.0.3",
+  "version": "2.1.0",
   "description": "A wrapper utility for interacting with plist data.",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -49,11 +49,10 @@
   "dependencies": {
     "bplist-creator": "0.1.1",
     "bplist-parser": "0.3.2",
-    "plist": "^3.0.5"
+    "plist": "^5.0.0"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
-    "@types/plist": "^3.0.2",
     "@vitest/coverage-v8": "^3.0.0",
     "husky": "^7.0.4",
     "lint-staged": "^11.2.6",
