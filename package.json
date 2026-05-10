@@ -11,7 +11,7 @@
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
-  "version": "1.5.2",
+  "version": "2.0.0",
   "description": "A wrapper utility for interacting with plist data.",
   "type": "module",
   "main": "./dist/index.js",
