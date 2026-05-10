@@ -1,4 +1,7 @@
 {
   "extends": "./tsconfig.json",
-  "exclude": ["__tests__", "dist"]
+  "compilerOptions": {
+    "rootDir": "./src"
+  },
+  "exclude": ["__tests__", "dist", "vitest.config.ts", "scripts"]
 }
