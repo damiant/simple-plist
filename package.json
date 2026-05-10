@@ -11,14 +11,21 @@
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
-  "version": "2.0.1",
+  "version": "2.0.3",
   "description": "A wrapper utility for interacting with plist data.",
   "type": "module",
-  "main": "./dist/index.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
     }
   },
   "files": [
@@ -32,9 +39,7 @@
     "xml"
   ],
   "scripts": {
-    "build:tsc": "tsc --project ./tsconfig-build.json",
-    "build:fix-declarations": "node scripts/fix-declarations.js",
-    "build": "run-s clean:build build:tsc build:fix-declarations",
+    "build": "tsup",
     "clean:build": "rimraf dist",
     "clean": "rimraf __tests__/write-test* coverage",
     "prepare": "husky install",
@@ -55,6 +60,7 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.7.1",
     "rimraf": "6.1.2",
+    "tsup": "^8.5.1",
     "typescript": "^5.0.0",
     "vitest": "^3.0.0"
   },
